@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './FeedModal.module.css';
 import useFetch from '../../Hooks/useFetch';
-import { PHOTO_GET } from '../../api';
+import { PHOTO_GET } from '../../Api';
 import Error from '../Helper/Error';
 import Loading from '../Helper/Loading';
 import PhotoContent from '../Photo/PhotoContent';
@@ -14,8 +14,8 @@ const FeedModal = ({ photo, setModalPhoto }) => {
     request(url, options);
   }, [photo, request]);
 
-  function handleOutsideClick(event){
-    if(event.target === event.currentTarget){
+  function handleOutsideClick(event) {
+    if (event.target === event.currentTarget) {
       setModalPhoto(null);
     }
   }
