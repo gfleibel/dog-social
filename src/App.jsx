@@ -18,7 +18,7 @@ const App = () => {
       <BrowserRouter>
         <UserStorage>
           <Header />
-          <main className='AppBody'>
+          <main className="AppBody">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="login/*" element={<Login />} />
@@ -32,6 +32,7 @@ const App = () => {
               />
               <Route path="foto/:id" element={<Photo />} />
               <Route path="perfil/:user" element={<UserProfile />} />
+              <Route path="dogs" element={<Home />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
