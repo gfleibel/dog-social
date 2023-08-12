@@ -12,3 +12,8 @@ Social network for dog owners to share their dog pictures with other users.
 
 ## Published site
 https://dogs-social-react.netlify.app/
+
+## Using the platform
+- Create user or use an existing one (username: dog | password: dog)
+- Upload your dog`s photo
+- Access other dog's pictures and leave comments
